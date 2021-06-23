@@ -1,38 +1,103 @@
+#root {
+    padding: 1em;
+}
+
 .App {
-  text-align: center;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    padding: 1em 3em;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App label {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App h1 {
+    text-align: center;
+    margin-top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.App h3 {
+    margin: .3em 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App input {
+    height: 2em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+footer button {
+    height: 3em;
+    width: 40%;
+    margin: 1em 0;
+}
+
+.single-button {
+    margin: 1em auto;
+}
+
+.App img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    display: inline-block;
+    margin: 2em auto;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.dark {
+    background-color: #575757;
+    color: #fff;
+}
+
+.dark input {
+    background-color: #8a8989;
+    color: #fff;
+}
+
+.theme {
+    position: relative;
+}
+
+.theme label {
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+
+.theme span {
+    position: absolute;
+    left: 20px;
+    top: 5px;
 }
